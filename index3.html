@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .wrapper{
+        display: grid;
+        /* grid-template-columns:1fr 1fr 1fr; */
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        /* grid-auto-rows: 100px; */
+        grid-auto-rows: minmax(100px,auto)
+    }
+    .wrapper > div{
+        background-color:#eee;
+        padding: 20px;
+    }
+    .wrapper > div:nth-child(even) {
+        background: #ddd;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div>lorem with Zachy</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam repudiandae eaque corrupti quas dolor fugiat? Distinctio officia unde sint suscipit doloremque explicabo debitis dolorum iste aut, nihil qui dicta error ullam, hic magnam eos itaque totam illum earum blanditiis eaque magni, laboriosam aperiam non. Impedit sint voluptates sed repellat, numquam quia beatae doloremque repellendus corporis cumque perspiciatis labore, eveniet, cupiditate possimus. Quasi culpa similique officiis placeat dolore, aut eveniet!</div>
+        <div>Lorem with Zachy</div>
+        <div>lorem with Zachy</div>
+        <div>lorem with Zachy</div>
+        <div>lorem with Zachy</div>
+    </div>
+</body>
+</html>
