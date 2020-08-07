@@ -1,0 +1,14 @@
+# name of workflow
+name: Auto-merge
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    types: [ opened,reopened ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Greet user
+        run: echo Hello user!
