@@ -1,8 +1,9 @@
 .wrapper {
     display:grid;
     grid-template-columns: 70% 30%;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px;
 }
 .wrapper>div{
     background-color:#eee;
