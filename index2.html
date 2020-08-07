@@ -14,19 +14,41 @@
         /* grid-auto-rows: 100px; */
         grid-auto-rows: minmax(100px,auto)
     }
-    .wrapper>div{
+    .wrapper > div{
         background-color:#eee;
         padding: 20px;
     }
-    .wrapper>div:nth-child(even) {
+    .wrapper > div:nth-child(even) {
         background: #ddd;
+    }
+    .nested{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(70px,auto);   
+        grid-gap: 10px;
+    }
+    .nested > div{
+        border: 1px solid #333;
+        padding: 10px;
     }
 </style>
 <body>
     <div class="wrapper">
         <div>lorem with Zachy</div>
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam repudiandae eaque corrupti quas dolor fugiat? Distinctio officia unde sint suscipit doloremque explicabo debitis dolorum iste aut, nihil qui dicta error ullam, hic magnam eos itaque totam illum earum blanditiis eaque magni, laboriosam aperiam non. Impedit sint voluptates sed repellat, numquam quia beatae doloremque repellendus corporis cumque perspiciatis labore, eveniet, cupiditate possimus. Quasi culpa similique officiis placeat dolore, aut eveniet!</div>
-        <div>lorem with Zachy</div>
+        <div>
+            <div class="nested">
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+                <div>Nested Divs Demo.</div>
+            </div>
+        </div>
         <div>lorem with Zachy</div>
         <div>lorem with Zachy</div>
         <div>lorem with Zachy</div>
